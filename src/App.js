@@ -1,21 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 flex items-center justify-center">
-      <div className="text-center">
-        <img src={logo} className="mx-auto h-32 w-32 animate-spin" alt="logo" />
-        <h1 className="text-4xl font-bold text-white mt-8 mb-4">
-          Hello, I'm Pankaj! 👋
-        </h1>
-        <p className="text-xl text-blue-200 mb-8">
-          Welcome to my first website. I'm learning to code!
-        </p>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-          Learn More About Me
-        </button>
-      </div>
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      <main className="max-w-3xl mx-auto p-8 space-y-16">
+        <section className="text-center space-y-4">
+          <h1 className="text-4xl font-semibold">Hello, I'm Pankaj! 👋</h1>
+          <p className="text-lg text-gray-600">Welcome to my minimal website. I'm learning to code!</p>
+        </section>
+
+        <section id="about" className="space-y-2">
+          <h2 className="text-2xl font-semibold">About</h2>
+          <p className="text-gray-700">This is a place where I share a bit about myself and my journey into web development.</p>
+        </section>
+
+        <section id="thoughts" className="space-y-2">
+          <h2 className="text-2xl font-semibold">Thoughts</h2>
+          <p className="text-gray-700">Sometimes I write down my ideas and observations on programming and life.</p>
+        </section>
+
+        <section id="contact" className="space-y-2">
+          <h2 className="text-2xl font-semibold">Contact Me</h2>
+          <p className="text-gray-700">Feel free to reach me at <a href="mailto:pankaj@example.com" className="text-blue-600 underline">pankaj@example.com</a>.</p>
+        </section>
+      </main>
     </div>
   );
 }
