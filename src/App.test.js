@@ -1,6 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
+test('renders call-to-action button', () => {
+  render(<App />);
+  const ctaButton = screen.getByText('Learn More About Me');
+  expect(ctaButton).toBeInTheDocument();
 test('renders contact section', () => {
   render(<App />);
   const contactHeading = screen.getByText(/contact me/i);
